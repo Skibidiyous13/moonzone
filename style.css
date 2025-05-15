@@ -34,3 +34,29 @@
 .game-card button:hover {
   background-color: #0056b3;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1a1a1a; /* ou la couleur de ton choix */
+  height: 100px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-center {
+  flex: 2;
+  text-align: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.title-image {
+  height: 60px;
+}
