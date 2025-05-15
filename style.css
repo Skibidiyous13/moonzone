@@ -69,7 +69,13 @@ body {
 }
 
 .title-image {
-  height: 500px; /* Augmente la hauteur ici */
+  height: 150px; /* Augmente la hauteur ici */
+  /* ou utilise width à la place si tu veux forcer la largeur */
+  /* width: 150px; */
+}
+
+.logo {
+  height: 50px; /* Augmente la hauteur ici */
   /* ou utilise width à la place si tu veux forcer la largeur */
   /* width: 150px; */
 }
