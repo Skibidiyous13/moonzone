@@ -61,12 +61,6 @@ header {
   height: 60px;
 }
 
-body {
-  background-color: #0a1f44; /* Bleu foncé */
-  color: #ffffff; /* Texte blanc pour le contraste */
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
 .logo {
   height: 100px; /* Augmente la hauteur ici */
@@ -80,11 +74,21 @@ body {
   object-fit: contain;      /* Garder la proportion du logo */
 }
 
+body {
+  background-color: #0a1f44; /* Fond de la page */
+  color: white;              /* Texte en blanc pour contraster */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;             /* Espacement autour du contenu */
+  text-align: center;        /* Centrer le texte */
+}
+
+/* Contenu du header avec le logo */
 header {
   display: flex;
-  justify-content: center;  /* Centre horizontalement */
-  align-items: center;      /* Centre verticalement */
-  padding: 10px 20px;          /* Espacement vertical du header */
-  background-color: #1a1a1a;
-  height: 80px;             /* Hauteur du header */
+  justify-content: center;   /* Centre horizontalement */
+  align-items: center;       /* Centre verticalement */
+  padding: 20px 0;           /* Espacement vertical du header */
+  background-color: #1a1a1a; /* Couleur du fond du header */
+  height: 120px;             /* Hauteur du header */
 }
