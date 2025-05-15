@@ -75,16 +75,16 @@ body {
 }
 
 .title-image {
-  height: 200px;
-  max-height: 100%;
-  object-fit: contain;
+  height: 60px;             /* Taille du logo, ajuste cette valeur */
+  max-height: 250%;
+  object-fit: contain;      /* Garder la proportion du logo */
 }
 
 header {
   display: flex;
-  align-items: center;  /* centre verticalement */
-  justify-content: center;  /* centre horizontalement */
-  padding: 10px 20px;
+  justify-content: center;  /* Centre horizontalement */
+  align-items: center;      /* Centre verticalement */
+  padding: 10px 20px;          /* Espacement vertical du header */
   background-color: #1a1a1a;
-  height: 80px; /* un header pas trop grand */
+  height: 80px;             /* Hauteur du header */
 }
