@@ -3,30 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pac-Man</title>
-    <style>
-        body {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        canvas {
-            border: 2px solid white;
-        }
-    </style>
+    <title>Jeux Unblocked</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="pacmanCanvas" width="400" height="400"></canvas>
-    <script>
-        const canvas = document.getElementById('pacmanCanvas');
-        const ctx = canvas.getContext('2d');
+    <h1>Bienvenue sur Jeux Unblocked</h1>
+    <div id="game-list">
+        <a href="pacman/index.html">
+          <button>Jouer à Pac-Man</button>
+        </a>
 
-        // Code JavaScript pour dessiner Pac-Man
-        // (à compléter selon la logique du jeu)
+        <a href="https://exemple.com/jeu2" target="_blank">
+            <button>Jeu 2</button>
+        </a>
+    </div>
 
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
