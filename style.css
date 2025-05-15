@@ -74,6 +74,15 @@ header {
   object-fit: contain;      /* Garder la proportion du logo */
 }
 
+/* Contenu principal sous le logo */
+body {
+  background-color: #0a1f44; /* Fond de la page */
+  color: white;             /* Texte en blanc pour contraster */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;            /* Espacement autour du contenu */
+}
+
 /* Centrer le logo dans le header */
 header {
   display: flex;
@@ -82,13 +91,4 @@ header {
   padding: 20px 0;          /* Espacement vertical du header */
   background-color: #1a1a1a; /* Couleur du fond du header */
   height: 120px;             /* Hauteur du header */
-}
-
-/* Contenu principal sous le logo */
-body {
-  background-color: #0a1f44; /* Fond de la page */
-  color: white;             /* Texte en blanc pour contraster */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;            /* Espacement autour du contenu */
 }
