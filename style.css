@@ -69,7 +69,7 @@ header {
 }
 
 .title-image {
-  height: 200px;             /* Taille du logo, ajuste cette valeur */
+  height: 180px;             /* Taille du logo, ajuste cette valeur */
   max-height: 100%;
   object-fit: contain;      /* Garder la proportion du logo */
 }
