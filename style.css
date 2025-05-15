@@ -67,3 +67,9 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+.title-image {
+  height: 150px; /* Augmente la hauteur ici */
+  /* ou utilise width à la place si tu veux forcer la largeur */
+  /* width: 150px; */
+}
