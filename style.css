@@ -63,13 +63,13 @@ header {
 
 
 .logo {
-  height: 100px; /* Augmente la hauteur ici */
+  height: 150px; /* Augmente la hauteur ici */
   /* ou utilise width à la place si tu veux forcer la largeur */
   /* width: 150px; */
 }
 
 .title-image {
-  height: 160px;             /* Taille du logo, ajuste cette valeur */
+  height: 200px;             /* Taille du logo, ajuste cette valeur */
   max-height: 100%;
   object-fit: contain;      /* Garder la proportion du logo */
 }
@@ -87,7 +87,7 @@ header {
   display: flex;
   justify-content: center;  /* Centre horizontalement */
   align-items: center;      /* Centre verticalement */
-  padding: 80px 80px;          /* Espacement vertical du header */
+  padding: 60px 60px;          /* Espacement vertical du header */
   background-color: #1a1a1a; /* Couleur du fond du header */
   height: 120px;             /* Hauteur du header */
 }
