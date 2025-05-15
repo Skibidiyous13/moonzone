@@ -73,3 +73,12 @@ body {
   /* ou utilise width à la place si tu veux forcer la largeur */
   /* width: 150px; */
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1a1a1a;
+  height: auto; /* Laisse la hauteur s'ajuster automatiquement */
+}
