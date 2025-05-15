@@ -87,7 +87,7 @@ header {
   display: flex;
   justify-content: center;  /* Centre horizontalement */
   align-items: center;      /* Centre verticalement */
-  padding: 10px 20px;          /* Espacement vertical du header */
+  padding: 80px 80px;          /* Espacement vertical du header */
   background-color: #1a1a1a; /* Couleur du fond du header */
   height: 120px;             /* Hauteur du header */
 }
