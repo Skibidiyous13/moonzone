@@ -5,6 +5,14 @@
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Survival Race</title>
+    <script>
+		if (window.self === window.top) {
+		    var gLoc = window.location.pathname;
+		    var gPath = gLoc.substring(0, gLoc.lastIndexOf('/'));
+		    var gName = gPath.substring(gPath.lastIndexOf("/") + 1);
+		    window.location.replace('../../../../' + gName + '-game/');
+		}
+	</script>
     <style>
       html,
       body {
@@ -183,5 +191,6 @@
         onResize();
       </script>
     </div>
-  </body>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"93c5107b1aa8ddb0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.4.0-1-g37f21b1","token":"c843b8c381814d58b40d4597a1bf7962"}' crossorigin="anonymous"></script>
+</body>
 </html>
