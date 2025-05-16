@@ -9,6 +9,13 @@
   transition: transform 0.3s ease;
 }
 
+#game-list {
+  display: flex;
+  flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+  gap: 20px; /* Espace entre les cartes */
+  justify-content: center; /* Centrer horizontalement (optionnel) */
+}
+
 .game-card:hover {
   transform: scale(1.05);
 }
