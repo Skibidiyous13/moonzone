@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>The Fruits Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="resources/jQuery/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h1>The Fruits Game</h1>
+        <div id="container">
+            <div id="score">
+                Score : <span id="scorevalue">0</span>
+            </div>
+            <div id="correct">
+                Correct
+            </div>
+            <div id="wrong">
+                Try Again
+            </div>
+            <div id="fruitContainer">
+                <img id="fruit1" class="fruit">
+            </div>
+            <div id="instruction">
+                Slice the fruits
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            <div id="trialsleft">
+            </div>
+            <div id="gameOver">
+            </div>
+        </div>
+        <!-- audio tag -->
+        <audio id="slicesound">
+            <source src="audio/slicefruit.mp3">
+            </source>
+            <source src="audio/slicefruit.ogg">
+            </source>
+        </audio>
+        <!-- script -->
+        <script type="text/javascript" src="resources/jQuery/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="resources/jQuery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+
+</html>
