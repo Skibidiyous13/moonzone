@@ -1,5 +1,3 @@
-# The Fruits Game
-This is a simplified version fruit slice game. Test your Reflexes by playing this Game from [Here](https://joykishansharma.github.io/The-Fruits-Game/)
-
-## Contribution are always welcome
-Make a Pull Request with a simple description. Thank you :smile:
+# Suika Watermelon Game
+Unity remake of the Suikia Watermelon game where you Merge Fruits to create new ones going viral.
+The game gets Incrementally Harder and its pretty fun
