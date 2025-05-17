@@ -1,52 +1,29 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Classic Snake - HTML5</title>
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #000;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    canvas {
-      width: 100vw;
-      height: 100vh;
-      display: block;
-    }
-
-    .container, header, .menu {
-      display: none; /* On masque le reste pour vraiment fullscreen */
-    }
-  </style>
+<meta charset="utf-8" />
+<title>HTML5 snake - Canvas Snake Game</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="page.css" type="text/css">
 </head>
 <body>
-  <canvas id="snake-game"></canvas>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<h1>html5-snake</h1>
+<p><a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a> variation of the classic <a href="http://en.wikipedia.org/wiki/Snake_(video_game)">snake game</a>.</p>
 
-  <!-- Snake game js -->
-  <script src="js/snake.js"></script>
+<div>
+  <canvas id="the-game" width="320" height="240">
+</div>
 
-  <script>
-    // Ajuste le canvas en fonction de la taille de la fenêtre
-    function resizeCanvas() {
-      const canvas = document.getElementById('snake-game');
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
+<p>Control snake with arrow keys, WASD, or HJKL (vim keys).</p>
 
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas(); // Appel initial
-  </script>
+<p>New food may appear under snake, uncoil to reveal.</p>
+
+<p>Collect the food to grow and increase speed.</p>
+
+<p>&copy; 2013 - <a href="http://JDStraughan.com">JDStraughan.com</a> - <a href="https://github.com/JDStraughan/html5-snake">Source on GitHub</a></p>  
+<script type="text/javascript" src="game.js"></script>
 </body>
 </html>
