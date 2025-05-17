@@ -1,3 +1,7 @@
-# Suika Watermelon Game
-Unity remake of the Suikia Watermelon game where you Merge Fruits to create new ones going viral.
-The game gets Incrementally Harder and its pretty fun
+# Suika / Watermelon Clone
+
+![](./screenshot.png)
+
+Built using plain javascript and the [matter.js](https://github.com/liabru/matter-js) physics engine.
+
+**[Play the game](https://tombofry.github.io/suika-game/)**
