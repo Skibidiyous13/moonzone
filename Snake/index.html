@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Classic Snake - HTML5</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    canvas {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+
+    .container, header, .menu {
+      display: none; /* On masque le reste pour vraiment fullscreen */
+    }
+  </style>
+</head>
+<body>
+  <canvas id="snake-game"></canvas>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- Snake game js -->
+  <script src="js/snake.js"></script>
+
+  <script>
+    // Ajuste le canvas en fonction de la taille de la fenêtre
+    function resizeCanvas() {
+      const canvas = document.getElementById('snake-game');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas(); // Appel initial
+  </script>
+</body>
+</html>
