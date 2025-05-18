@@ -2,14 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Doors Castle - Démarrage</title>
+  <title>Doors Castle - Version intégrée</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       overflow: hidden;
-      font-family: sans-serif;
     }
 
     .container {
@@ -22,55 +21,31 @@
       width: 100%;
       height: 100%;
       border: none;
-      pointer-events: none; /* Empêche les clics sur l'iframe au début */
     }
 
-    /* Fond noir transparent */
-    .overlay {
+    .footer-overlay {
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent */
-      z-index: 100;
-      pointer-events: auto; /* Permet de cliquer sur l'overlay pour supprimer l'écran noir */
+      height: 50px;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-size: 16px;
+      opacity: 0.9;
+      z-index: 10;
+      pointer-events: none; /* Important pour que les clics passent au jeu */
     }
-
-    /* Zone invisible pour le clic */
-    .click-zone {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 101; /* Elle doit être au-dessus de l'iframe */
-      pointer-events: auto; /* Permet les clics pour supprimer l'overlay */
-    }
-
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Jeu intégré -->
     <iframe src="https://www.crazygames.fr/embed/doors-castle" allow="gamepad *;"></iframe>
-
-    <!-- Overlay fond noir transparent -->
-    <div class="overlay" id="startOverlay"></div>
-
-    <!-- Zone invisible pour le clic -->
-    <div class="click-zone" onclick="startGame()"></div>
+    <div class="footer-overlay">👑 Doors Castle - Bonne chance !</div>
   </div>
-
-  <script>
-    function startGame() {
-      // Cache l'overlay et la zone de clic après un clic
-      document.getElementById('startOverlay').style.display = 'none';
-      document.querySelector('.click-zone').style.display = 'none';
-      
-      // Permet de cliquer à nouveau sur l'iframe
-      document.querySelector('iframe').style.pointerEvents = 'auto';
-    }
-  </script>
 </body>
 </html>
