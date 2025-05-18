@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dérivez vôtre problème, ainsi que le jeu.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px black;
+      width: 300px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .success {
+      color: lightgreen;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Dérivez vôtre problème, ainsi que le jeu.</h2>
+
+  <form id="game-form">
+    <input type="text" id="gameName" placeholder="Problème?" required>
+    <button type="submit">Envoyer</button>
+    <div class="success" id="successMsg" style="display:none;">Probème envoyée ! ✅</div>
+  </form>
+
+  <script>
+    const form = document.getElementById('game-form');
+    const successMsg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const game = document.getElementById('gameName').value;
+
+      // TON webhook ici :
+      const webhookURL = "https://discord.com/api/webhooks/1373609288194588772/owE8r3gozPys3C8yCfbdlrK-Xkxqb3K82zpG_gfB1tjZZw9NVc2eFBfR8bDUo2pwGyhP";
+
+      fetch(webhookURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          content: `❗ Problème dans un jeu : **${game}**`
+        })
+      }).then(() => {
+        successMsg.style.display = 'block';
+        form.reset();
+      }).catch((err) => {
+        alert("Erreur lors de l'envoi.");
+        console.error(err);
+      });
+    });
+  </script>
+
+</body>
+</html>

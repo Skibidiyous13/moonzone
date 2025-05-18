@@ -85,9 +85,12 @@ header {
   position: absolute;
   right: 20px;
   top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espace entre les boutons */
 }
 
-.suggestion-button {
+.button {
   background-color: #007bff;
   color: white;
   padding: 10px 16px;
@@ -96,8 +99,12 @@ header {
   font-weight: bold;
 }
 
-.suggestion-button:hover {
-  background-color: #0056b3;
+.suggestion {
+  background-color: #0056b3; /* couleur personnalisée pour suggestion */
+}
+
+.probleme {
+  background-color: #dc3545; /* couleur différente pour problème */
 }
 
 /* Contenu principal sous le logo */
