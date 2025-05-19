@@ -99,8 +99,17 @@ header {
   font-weight: bold;
 }
 
+.button:hover {
+  background-color: #555;
+}
+
+
 .suggestion {
   background-color: #0056b3; /* couleur personnalisée pour suggestion */
+}
+
+.update {
+  background-color: #048300; /* couleur personnalisée pour update */
 }
 
 .probleme {
