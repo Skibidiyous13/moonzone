@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tung Sahur Clicker</title>
+  <link rel="stylesheet" href="25051601/theme/game.css">
+  <style>
+    body { margin: 0; background: black; }
+    #unity-container { width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; }
+  </style>
+</head>
+<body>
+  <div id="unity-container">
+    <canvas id="unity-canvas"></canvas>
+  </div>
+  <script>
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/tung-sahur-clicker-v25051601.loader.js";
+    var config = {
+      dataUrl: buildUrl + "/tung-sahur-clicker-v25051601.data.unityweb",
+      frameworkUrl: buildUrl + "/tung-sahur-clicker-v25051601.framework.js.unityweb",
+      codeUrl: buildUrl + "/tung-sahur-clicker-v25051601.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "1games.io",
+      productName: "Tung Sahur Clicker",
+      productVersion: "25051601"
+    };
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) => {
+        console.log("Loading: " + Math.round(progress * 100) + "%");
+      });
+    };
+    document.body.appendChild(script);
+  </script>
+  <script src="Build/tung-sahur-clicker-v25051601.loader.js"></script>
+</body>
+</html>
