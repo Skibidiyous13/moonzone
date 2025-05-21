@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://moonzone.vercel.app/sitemap.xml
