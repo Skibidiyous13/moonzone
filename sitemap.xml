@@ -1,0 +1,10 @@
+xml version=1.0 encoding=UTF-8
+urlset xmlns=httpwww.sitemaps.orgschemassitemap0.9
+  url
+    lochttpston-site.comloc
+    lastmod2025-05-21lastmod
+    changefreqmonthlychangefreq
+    priority1.0priority
+  url
+  !-- Ajoute ici toutes les pages importantes --
+urlset
