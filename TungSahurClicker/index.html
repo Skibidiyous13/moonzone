@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tung Sahur Clicker</title>
-  <link rel="stylesheet" href="25051601/theme/game.css">
+  <meta charset="UTF-8" />
+  <title>Tung Sahur Clicker HTML5</title>
   <style>
-    body { margin: 0; background: black; }
-    #unity-container { width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; }
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    #clicker {
+      background-color: #ff5e00;
+      color: white;
+      font-size: 2rem;
+      border: none;
+      padding: 20px 40px;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #ff5e00;
+      transition: transform 0.1s;
+    }
+    #clicker:active {
+      transform: scale(0.95);
+    }
+    #count {
+      margin-top: 15px;
+      font-size: 1.5rem;
+    }
+    #char {
+      margin: 30px;
+      max-height: 250px;
+    }
   </style>
 </head>
 <body>
-  <div id="unity-container">
-    <canvas id="unity-canvas"></canvas>
-  </div>
-  <script>
-    var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/tung-sahur-clicker-v25051601.loader.js";
-    var config = {
-      dataUrl: buildUrl + "/tung-sahur-clicker-v25051601.data.unityweb",
-      frameworkUrl: buildUrl + "/tung-sahur-clicker-v25051601.framework.js.unityweb",
-      codeUrl: buildUrl + "/tung-sahur-clicker-v25051601.wasm.unityweb",
-      streamingAssetsUrl: "StreamingAssets",
-      companyName: "1games.io",
-      productName: "Tung Sahur Clicker",
-      productVersion: "25051601"
-    };
+  <h1>Tung Sahur Clicker</h1>
+  <img id="char" src="https://azgames.io/upload/cache/upload/imgs/tungsahurclicker2-m180x180.webp" alt="Character" />
+  <button id="clicker">TUNG TUNG TUNG !</button>
+  <div id="count">Clics : 0</div>
 
-    var script = document.createElement("script");
-    script.src = loaderUrl;
-    script.onload = () => {
-      createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) => {
-        console.log("Loading: " + Math.round(progress * 100) + "%");
-      });
-    };
-    document.body.appendChild(script);
+  <audio id="sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+
+  <script>
+    let count = 0;
+    const btn = document.getElementById('clicker');
+    const countDisplay = document.getElementById('count');
+    const sound = document.getElementById('sound');
+
+    btn.addEventListener('click', () => {
+      count++;
+      countDisplay.textContent = "Clics : " + count;
+      sound.currentTime = 0;
+      sound.play();
+    });
   </script>
-  <script src="Build/tung-sahur-clicker-v25051601.loader.js"></script>
 </body>
 </html>
